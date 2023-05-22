@@ -2,6 +2,7 @@ package initializers
 
 import (
 	"fmt"
+	"goreact/models"
 	"os"
 
 	"gorm.io/driver/postgres"
@@ -21,6 +22,7 @@ func ConnectToDatabase() {
 
 }
 
-func SyncDB(db *gorm.DB) error {
-	db.AutoMigrate(&Models.Post{})
+func SyncDB() {
+	DB.AutoMigrate(&models.Post{})
+
 }
