@@ -1,0 +1,32 @@
+{
+  "name": "goreact",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node esbuild.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerachil/GOReact.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerachil/GOReact/issues"
+  },
+  "homepage": "https://github.com/jerachil/GOReact#readme",
+  "description": "",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "esbuild": "^0.17.19",
+    "esbuild-sass-plugin": "^2.9.0",
+    "react-router-dom": "^6.11.2"
+  }
+}

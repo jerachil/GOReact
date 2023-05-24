@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 	"goreact/initializers"
-	"goreact/controllers"
+	
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/template/html"
 )
@@ -24,7 +24,7 @@ func main() {
     })
 
 	// Routes
-    app.Get("/", controllers.PostsIndex)
+    Routes(app)
 
 	// Configure app
     app.Static("/", "./public")
