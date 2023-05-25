@@ -6,6 +6,18 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
+
+
+
+
+
 func Routes(app *fiber.App) {
-	app.Get("/", controllers.PostsIndex)
+	frontendRoutes := []string{
+		"/",
+		"/about",
+	}
+
+	for _, route := range frontendRoutes {
+		app.Get(route, controllers.PostsIndex)
+	}
 }

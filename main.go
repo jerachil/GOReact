@@ -23,11 +23,11 @@ func main() {
         Views: engine,
     })
 
-	// Routes
-    Routes(app)
-
 	// Configure app
     app.Static("/", "./public")
+
+	// Routes
+    Routes(app)
 
 	// Start app
     app.Listen(":" + os.Getenv("PORT"))
